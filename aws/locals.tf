@@ -1,8 +1,9 @@
 locals {
   region  = "ap-southeast-2"
   profile = "default"
+  user = "sat0ken"
   tags = {
-    user = "sat0ken"
-    env  = "test"
+    user = local.user
+    env  = "terraform-study"
   }
 }
